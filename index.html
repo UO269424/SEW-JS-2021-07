@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 7</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="Ejercicio7.js"></script>
+        <link rel="stylesheet" href="Ejercicio7.css"/>
+    </head>
+    <body>
+        <h1>Tarea 1</h1>
+            <section>
+                <h2>Ocultar y mostrar elementos html</h2>
+                <p id="p1">Ahora me ves</p>
+                <br>
+                <button type="button" onclick="ejercicio.show('#p1');">Mostrar</button>
+                <button type="button" onclick="ejercicio.hide('#p1');">Esconder</button>
+            </section>
+        <h1>Tarea 2</h1>
+            <section>
+                <h2>Modificar algunos de los elementos html</h2>
+                <p id="frase">Voy a aprobar SEW</p>
+                <br>
+                <button type="button" onclick="ejercicio.modificar('#frase');">Cambiar frase</button>
+            </section>
+        <h1>Tarea 3</h1>
+            <section>
+                <h2>Añadir elementos html</h2>
+                <p id="masCosas"></p>
+                <br>
+                <button type="button" onclick="ejercicio.añadirElementos('#masCosas');">Nuevo elemento</button>
+            </section>
+        <h1>Tarea 4</h1>
+            <section id="container">
+                <h2>Eliminar elementos html</h2>
+                <p id="peliculas"></p>
+                <p id="series"></p>
+                <p id="actores"></p>
+                <br>
+                <button type="button" onclick="ejercicio.masPeliculas('#peliculas');">Añadir películas</button>
+                <button type="button" onclick="ejercicio.masSeries('#series');">Añadir series</button>
+                <button type="button" onclick="ejercicio.masActores('#actores');">Añadir actores</button>
+                <button type="button" onclick="ejercicio.eliminar('#peliculas');">Eliminar películas</button>
+                <button type="button" onclick="ejercicio.eliminar('#series');">Eliminar series</button>
+                <button type="button" onclick="ejercicio.eliminar('#actores');">Eliminar actores</button>
+            </section>
+        <h1>Tarea 5</h1>
+            <section id="container">
+                <h2>Mostrar recorrido html</h2>
+                <p id="recorrido"></p>
+                <br>
+                <button type="button" onclick="ejercicio.recorrer('#recorrido');">Mostrar html</button>
+            </section>
+        <h1>Tarea 6</h1>
+        <section id="container">
+            <h2>Sumar filas y columnas de una tabla</h2>
+            <table id="tabla-personas">
+                <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+                <tr>
+                    <td>57483907H</td>
+                    <td>Alonso</td>
+                    <td>Gago</td>
+                </tr>
+                <tr>
+                    <td>47582634R</td>
+                    <td>Raúl</td>
+                    <td>Gómez</td>
+                </tr>
+                <tr>
+                    <td>23434554L</td>
+                    <td>Ivan</td>
+                    <td>Fernández</td>
+                </tr>
+                <tr>
+                    <td>45665433P</td>
+                    <td>Sofía</td>
+                    <td>Suárez</td>
+                </tr>
+            </table>
+            <h3>Resultado:</h3>
+            <p id="resultadoFilasYColumnas"></p>
+            <br>
+            <button type="button" onclick="ejercicio.sumarFilasYColumnas('#resultadoFilasYColumnas');">Sumar filas y columnas</button>
+        </div>
+    </body>
+    </html>
